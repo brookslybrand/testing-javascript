@@ -16,7 +16,7 @@ function expect(actual) {
       }
     },
     toEqual(expected) {},
-    toBeGreaterThan(expected) {}
+    toBeGreaterThan(expected) {},
   }
 }
 

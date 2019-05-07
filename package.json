@@ -1,11 +1,24 @@
 {
-  "name": "testing-javascript",
+  "name": "static",
   "version": "1.0.0",
   "description": "",
-  "main": "setup-globals.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint \"**/src/**\"",
+    "flow": "flow",
+    "format": "npm run prettier -- --write",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\"",
+    "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
+    "precommit": "npm run validate"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "flow-bin": "^0.98.1",
+    "husky": "^2.2.0",
+    "prettier": "^1.17.0"
+  }
 }

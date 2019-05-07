@@ -1,4 +1,4 @@
-const { sum, subtract } = require('./math')
+const {sum, subtract} = require('./math')
 
 let result = sum(3, 7)
 let expected = 10
@@ -16,6 +16,6 @@ function expect(actual) {
       }
     },
     toEqual(expected) {},
-    toBeGreaterThan(expected) {}
+    toBeGreaterThan(expected) {},
   }
 }

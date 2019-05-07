@@ -4,4 +4,4 @@ const subtract = (a, b) => a - b
 const sumAsync = (...args) => Promise.resolve(sum(...args))
 const subtractAsync = (...args) => Promise.resolve(subtract(...args))
 
-module.exports = { sum, subtract, sumAsync, subtractAsync }
+module.exports = {sum, subtract, sumAsync, subtractAsync}
