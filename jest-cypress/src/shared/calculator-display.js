@@ -16,6 +16,7 @@ class CalculatorDisplay extends React.Component {
 
     return (
       <div
+        id="hi"
         {...props}
         css={{
           color: 'white',
