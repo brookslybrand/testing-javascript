@@ -4,7 +4,8 @@
   "description": "See how to configure Jest and Cypress with React, Babel, and Webpack",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
     "dev": "webpack-serve",
     "build": "webpack --mode=production",
     "postbuild": "cp ./public/index.html ./dist/index.html",

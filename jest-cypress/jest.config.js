@@ -13,4 +13,13 @@ module.exports = {
     '\\.css$': require.resolve('./test/style-mock.js'),
   },
   setupTestFrameworkScriptFile: require.resolve('./test/setup-tests.js'),
+  collectCoverageFrom: ['**/src/**/*.js'],
+  coverageThreshold: {
+    global: {
+      statements: 100,
+      branches: 100,
+      lines: 100,
+      functions: 100,
+    },
+  },
 }
