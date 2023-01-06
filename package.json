@@ -8,6 +8,6 @@
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
-    "jest": "^23.1.0"
+    "jest": "^29.3.1"
   }
 }
